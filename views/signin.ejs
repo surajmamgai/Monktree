@@ -1,0 +1,248 @@
+<!-- 	#ED1B24
+	#FFFFFF
+	#FFECED -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			.bg{
+				display:flex;
+				z-index:-1;
+				position:fixed;
+				margin-top: -20vh;
+			}
+			#error{
+			    font-size:10px;
+			}
+			.item{
+				height:100vh;
+				z-index: -1;
+			}
+			.red{
+				width:50vw;
+				background: linear-gradient(to top right, #ff4f4f,#f90000);
+				opacity:0.9;
+			}
+			.white{
+				width:50vw;
+				background-color: #ffffff;
+			}
+			.svg{
+				position: relative;
+			}
+			.svg1{
+				position: absolute;
+				right:0;
+				top : 20vh;
+			}
+			.svg2{
+				position: absolute;
+				right:0;
+				top : 28vh;
+			}
+			.svg3{
+				position: absolute;
+				right: 23vh;
+				top:24vh;
+			}
+			.heading{
+				text-align: center;
+			}
+#MonktreeIcon{
+	position: absolute;
+	left: 5vw;
+	top: 5vh;
+	width: 17vw;
+}
+.bg>span{
+	position: absolute;
+	font-size: 1.8vw;
+	color: #fff;
+	left: 10vw;
+	top: 45vh;
+}
+#GoBack{
+    position: absolute;
+	width: 2vw;	
+    left: 4vw;
+    top: 83vh;
+}
+h5{
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.5vw;
+    left: 6.5vw;
+    top: 82.7vh;
+
+}
+
+form {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 20vw;
+    margin-top: 20vh;
+    padding: 25px 25px 25px 25px;
+    border-radius: 3%;
+    font-family: Segoe UI;
+    background: #FfFfFf;
+    filter: drop-shadow(1px 1px 10px #aaa);
+}
+h1 {
+    font-size: 20px;
+    margin: 0vh 0vh 5vh 0vh;
+    color: #555;
+    text-shadow: 0.5px 0.5px #aaa;
+    text-align: center;
+
+}
+.underline-small{
+	position:relative;
+}
+h1::after{
+  display: inline-block;
+  content:'';
+  height:2px;
+  width:12%;
+  background:#555;
+  position:absolute;
+  left:calc(44%);
+  bottom:-5px;
+}
+input[type="text"], input[type="password"], select {
+    height: 30px;
+    margin-bottom: 16px;
+    padding: 3px 3px 3px 5px;
+    width: 100%;
+    border:none;
+    font-family: Segoe UI;
+    border-bottom: 1px solid;
+    border-color: #999;
+    background-color: #FfFfFf;
+
+}
+
+#submit {
+    background:#f90000;
+    opacity:0.8;
+    color: #FFF;
+    width: 50%;
+    margin-left:5vw;
+    padding: 0.7vw 1vw 0.7vw 1vw;
+    margin-bottom: 20px;
+	border: none;
+    filter: drop-shadow(1px 1px 1px #aaa);
+    border-radius: 50vw;
+    cursor: pointer;
+}
+#submit:hover {
+     opacity:1;
+}
+h6{
+	text-align: center;
+	font: 12px solid;
+	color: #555;
+	text-shadow: 0.2px 0.2px #aaa;
+}
+h6>a{
+	color: #f00;
+	text-decoration: none;
+}
+h4{
+	text-align: right;
+	font: 12px solid;
+	padding-bottom: 35px;
+}
+h4>a{
+	color: #f00;
+	text-decoration: none;
+}
+@media only screen and (max-width:500px) and (max-height:1000px){
+#MonktreeIcon{
+	width: 45vw;
+}
+.bg{
+margin-top:-20vh;
+}
+.bg>span{
+font-size: 0vw;
+}
+#GoBack{
+margin-top: 6.9vw;
+width: 5vw;
+}
+h5{
+font-size: 4.5vw;
+top: 86.3vh;
+left: 12vw;
+}
+form {
+margin-left: 10vw;
+margin-right: 10vw;
+margin-top: 15vh;
+max-width: 80vw;
+padding: 70px 30px 70px 30px;
+}
+h1 {
+font-size: 7vw;
+font-weight: normal;
+text-shadow: 0.5px 0.5px #aaa;
+}
+input[type="password"], input[type="text"], select {
+height: 30px;
+font-size: 5vw;
+margin-bottom: 30px;
+padding: 5px 5px 5px 5px;
+}
+h6{
+	font-size: 15px;
+}
+#submit {
+font-size: 5vw;
+padding: 2vw 5vw 2vw 5vw;
+margin-left: 25%;
+}
+}
+
+</style>
+	</head>
+	<body>
+		<div class="bg">
+			<div class="red item"></div>
+			<div class="white item">
+				<div class="svg">
+					  <svg	class = 'svg1 outer'width = '31vh'height = '62vh'>
+						<circle cx="30vh" cy="30vh" r="29vh" stroke="#FFECED" stroke-width="1vh" fill="white" />
+					  </svg>
+					  <svg	class = 'svg2 inner' width="22vh" height="44vh">
+						<circle cx="22vh" cy="22vh" r="14vh" stroke="#FFECED" stroke-width="8vh" fill="white" />
+					  </svg>
+					  <svg	class = 'svg3' width="4vh" height="4vh">
+						<circle cx="2vh" cy="2vh" r="2vh"  fill="#FFECED" />
+				  	  </svg>
+				</div>
+			</div>
+			<img id="MonktreeIcon" src="static/images/MonktreeIcon.png">
+			<span>Nice to See You Again!</span>
+			<a href="/">
+			<img id="GoBack" src="static/images/GoBackIcon.png">
+   			 <h5>Home</h5></a>
+			</div>
+	<form action="/backend/signin" method="post">
+    <h1 class="underline-small">SIGN IN</h1>
+        <p style = "color:red;text-align: center;"></p>
+        <input id="username" type="text" name="mobile" placeholder="Phone No." title="Enter your Registered Phone Number" required="true" />
+        <input id="Password" type="password" name="password" placeholder="Password" title="Enter your Password" minlength="8" required="true" />
+        <h4><a href="/forgot-password">Forgot Password?</a></h4>
+        <input id="submit" type="submit" value="Sign In" />
+        <h6>Haven't Registered Yet? <a href="/mobile">Sign Up</a></h6>
+</form>
+	</body>
+	</html>

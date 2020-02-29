@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			.bg{
+				display:flex;
+				z-index:-1;
+				position:fixed;
+				margin-top: -4vh;
+			}
+			.item{
+				height:100vh;
+				z-index: -1;
+			}
+			.red{
+				width:50vw;
+				background: linear-gradient(to top right, #ff4f4f,#f90000);
+				opacity:0.9;
+			}
+			.white{
+				width:50vw;
+				background-color: #ffffff;
+			}
+			.svg{
+				position: relative;
+			}
+			.svg1{
+				position: absolute;
+				right:0;
+				top : 20vh;
+			}
+			.svg2{
+				position: absolute;
+				right:0;
+				top : 28vh;
+			}
+			.svg3{
+				position: absolute;
+				right: 23vh;
+				top:24vh;
+			}
+			.heading{
+				text-align: center;
+			}
+#MonktreeIcon{
+	position: absolute;
+	left: 5vw;
+	top: 5vh;
+	width: 17vw;
+}
+.bg>span{
+	position: absolute;
+	font-size: 1.8vw;
+	color: #fff;
+	left: 7vw;
+	top: 45vh;
+}
+.bg>h4{
+	position: absolute;
+	font-size: 1vw;
+	color: #fff;
+	left: 13vw;
+	top: 50vh;
+}
+#GoBack{
+    position: absolute;
+    width: 2vw;
+    left: 4vw;
+    top: 86vh;
+}
+h5{
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.5vw;
+    left: 6.5vw;
+    top: 85.7vh;
+
+}
+form {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 20vw;
+    margin-top: 4vh;
+    background: #FfFfFf;
+    filter: drop-shadow(1px 1px 5px #777);
+    padding: 20px 20px 20px 20px;
+    border-radius: 3%;
+    font-family: Segoe UI;
+}
+h1 {
+    font-size: 20px;
+    margin: 1vh 0vh 3vh 0vh;
+    color: #555;
+    text-shadow: 0px 2px #ccc;
+    text-align: center;
+
+}
+.underline-small{
+	position:relative;
+}
+h1::after{
+  display: inline-block;
+  content:'';
+  height:2px;
+  width:10%;
+  background:#555;
+  position:absolute;
+  left:calc(44%);
+  bottom:-5px;
+}
+input[type="text"], input[type="date"], input[type="number"],input[type ="tel"] ,select {
+    height: 30px;
+    margin-bottom: 16px;
+    padding: 3px 3px 3px 5px;
+    width: 96%;
+    font-family: Segoe UI;
+    border:none;
+    border-bottom: 1px solid;
+    border-color: #999;
+    background-color: #FfFfFf;
+
+}
+input[type="date"]{
+	width: 76%;
+}
+#DOB{
+	color: #777;
+	font-family: Segoe UI;
+}
+#State, #PIN, #Landmark, #City{
+	width: 46%;
+}
+
+#submit {
+    background:#f90000;
+    opacity:0.8;
+    color: #FFF;
+    width: 50%;
+    margin-left:5vw;
+    padding: 1vw 0vw 1vw 0vw;
+    margin-bottom: 3px;
+	border: none;
+    filter: drop-shadow(1px 1px 1px #aaa);
+    border-radius: 50vw;
+    cursor: pointer;
+}
+#submit:hover {
+     opacity:1;
+}
+.Gender{
+	color: #555;
+	width: 100%;
+}
+@media only screen and (max-width:500px) and (max-height:1000px){
+	#MonktreeIcon{
+	top: 12vw;
+	width: 45vw;
+}
+.bg{
+margin-top:-15vh;
+}
+.bg>span{
+font-size: 0vw;
+}
+#GoBack{
+margin-top: 1.7vw;
+width: 5vw;
+}
+h5{
+font-size: 4.5vw;
+top: 86.5vh;
+left: 12vw;
+}
+form {
+margin-left: 10vw;
+margin-right: 10vw;
+margin-top: 8vh;
+max-width: 80vw;
+padding: 20px 30px 20px 30px;
+}
+h1 {
+font-size: 5vw;
+font-weight: normal;
+text-shadow: 0.5px 0.5px #aaa;
+}
+input[type="text"], input[type="date"], input[type="number"],input[type ="tel"], select {
+height: 27px;
+font-size: 3vw;
+margin-bottom: 12px;
+padding: 5px 5px 5px 5px;
+}
+#DOB{
+	font-size: 2.5vw;
+}
+h6{
+	font-size: 15px;
+}
+#submit {
+font-size: 5vw;
+padding: 2vw 5vw 2vw 5vw;
+margin-left: 25%;
+}
+#State, #PIN, #Landmark, #City{
+width: 45%;
+}
+}
+</style>
+	</head>
+	<body>
+		<div class="bg">
+			<div class="red item"></div>
+			<div class="white item">
+				<div class="svg">
+					  <svg	class = 'svg1 outer'width = '31vh'height = '62vh'>
+						<circle cx="30vh" cy="30vh" r="29vh" stroke="#FFECED" stroke-width="1vh" fill="white" />
+					  </svg>
+					  <svg	class = 'svg2 inner' width="22vh" height="44vh">
+						<circle cx="22vh" cy="22vh" r="14vh" stroke="#FFECED" stroke-width="8vh" fill="white" />
+					  </svg>
+					  <svg	class = 'svg3' width="4vh" height="4vh">
+						<circle cx="2vh" cy="2vh" r="2vh"  fill="#FFECED" />
+				  	  </svg>
+				</div>
+			</div>
+			<img id="MonktreeIcon" src="static/images/MonktreeIcon.png">
+			<span>A Final Touch to Set Your Profile</span>
+			<h4>It'll take few moments</h4>
+		</div>
+			<a href="/">
+			<img id="GoBack" src="static/images/GoBackIcon.png">
+   			 <h5>Home</h5></a>
+	<form action="/backend/personal" method="post">
+		<h1 class="underline-small">PERSONAL</h1>
+        <input id="StudentName" type="text" name="name" placeholder="Student's Name" title="Enter your Name" maxlength="25" required="true" />
+        <input id="FatherName" type="text" name="father" placeholder="Father's Name" title="Enter your Father's Name" maxlength="25" required="true" />
+        <select name="gender" class="Gender" title="Select your Gender" required="true">
+        <option id="Gender" value="">Gender</option>
+        <option id="Gender" value="Male">Male</option>
+        <option id="Gender" value="Female">Female</option>
+        </select>
+
+		<label id="DOB">&nbsp;DOB :&nbsp;&nbsp;</label><input id="DOB" type="date" name="dob" placeholder="DOB" title="Enter your Date of Birth" required="true" />
+        <input id="Mobile" type="tel" name="fathermobile" placeholder="Father's contact" minlength="10" maxlength="10" title="Enter Your Father's Phone No. without Country Code" pattern="^[0-9]{}$"  required="true" />
+
+		<h1 class="underline-small">ADDRESS</h1>
+    	<input id="House/Street/Area" type="text" name="house_street_area" title="Enter your House/Street/Area" placeholder="House/Street/Area" maxlength="50" required="true" />
+    	<input id="Landmark" type="text" name="landmark" placeholder="Landmark" title="Enter Landmark near you" maxlength="20" required="true" />
+    	<input id="City" type="text" name="city" placeholder="City" title="Enter your City" maxlength="30" required="true" />
+    	<input id="State" type="text" name="state" placeholder="State" title="Enter your State" maxlength="30" required="true" />
+    	<input id="PIN" type="number" name="pin" placeholder="PIN" required="true" title="Enter your PIN Code" minlength="30" />
+
+        <input id="submit" type="submit" value="Finish" />
+</form>
+	</body>
+	</html>

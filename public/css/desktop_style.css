@@ -1,0 +1,689 @@
+	.mobile{
+		display:none;
+	}
+	
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			overflow-x: hidden;
+			font-family:Segoe UI;
+			background-color: #F1F5FF;
+			position: relative;
+		}
+		a{
+		    text-decoration:none;
+		}
+		#background1{
+			position: relative;
+			width: 100%;
+		}
+		#background2{
+			position: relative;
+			width: 100%;
+			top: 5vw;
+		}
+		#background3{
+			position: relative;
+			width: 100%;
+			top: 17vw;
+		}
+		#MonktreeIcon{
+			position: absolute;
+			left: 5vw;
+			top: 2.2vw;
+			width: 17vw;
+		}
+		#StoreIcon{
+			position: absolute;
+			left: 26vw;
+			top: 2vw;
+			width: 6.5vw;
+		}
+		#Bookbank{
+			position: absolute;
+			left: 44vw;
+			top: 3.7vw;
+			font-size: 1.8vw;
+			color:white;
+		}
+		#CodingShastra{
+			position: absolute;
+			left: 55vw;
+			top: 3.7vw;
+			font-size: 1.8vw;
+			color:white;
+		}
+		#ProfileBuild{
+			position: absolute;
+			left: 69vw;
+			top: 3.7vw;
+			font-size: 1.8vw;
+			color:white;
+		}
+		#LoginButton{
+			position: absolute;
+			left: 80vw;
+			top: 3.1vw;
+			border: 2px solid white;
+			color: white;
+			font-size: 1.8vw;
+			display: inline;
+			padding: 5px 20px 5px 20px;
+			border-radius: 1.8vw;
+			box-shadow: 0 0 3px 0.3px #aaa;
+		}
+		#LoginButton:hover{
+		    box-shadow: 0 0 6px 0.6px #777;
+		}
+		#HassleFreeAcademicJourney{
+			position: absolute;
+			left: 11vw;
+			top: 21vw;
+			font-size:1.8vw;
+			color:white;
+		}
+		#HassleFreeAcademicJourney>span{
+		    font-size:3vw;
+		    font-weight:bold;
+		}
+		#SmilingBoyAndGirl{
+			position: absolute;
+			left: 55vw;
+			top: 18vw;
+			width: 35vw;
+			box-shadow: 4vw -4vw 0px 0px #ffddd0;
+			border-radius: 1vw;
+		}
+		#EnrollNowButton1{
+			position: absolute;
+			left: 12vw;
+			top: 42vw;
+			font-size: 1.5vw;
+			border: 1px white;
+			color: #ff4500;
+			background:white;
+			display: inline;
+			border-radius: 3vw;
+			padding: 1vw 4.6vw 1vw 1.5vw;
+			filter: drop-shadow(0.5px 0.5px 4px #777);
+		}
+		#EnrollNowButton1:hover{
+		    filter: drop-shadow(0.5px 0.5px 8px #444);
+		}
+		#EnrollNowButton1+img{
+		    position:absolute;
+		    left: 21.6vw;
+			top: 42.4vw;
+			width:3vw;
+		}
+		#KnowMore{
+			position: absolute;
+			left: 30vw;
+			top: 42.9vw;
+			color:white;
+			font-size:1.8vw;
+		}
+		#OurFlagshipServicesBookbank{
+			position: absolute;
+			left: 11vw;
+			top: 83vw;
+			font-size: 3vw;
+			font-weight: 400;
+			color:#666;
+		}
+		#OurFlagshipServicesBookbank>h6{
+		    color:#FE9100;
+		    font-size: 3vw;
+		    font-weight: 500;
+		}
+		#OurFlagshipServicesBookbank>p{
+		    font-size:1.4vw;
+		}
+		.grid-wrapper{
+			position: absolute;
+			left: 55vw;
+			top: 81vw;
+			display:grid;
+			grid-gap: 10px;
+			grid-template-columns: 2fr 2fr;
+			filter: drop-shadow(0.5px 0.5px 3px #aaa);
+
+		}
+		.box{
+			background-color: white;
+			padding: 6vw;
+			margin:0.6vw;
+			color:#444;
+			font-size: 1.2vw;
+		}
+
+		.box:hover{
+			filter: drop-shadow(0.1px 0.1px 10px #aaa);
+		}
+		.box>img{
+			width: 700%;
+			margin-top: -4vw;
+			margin-left:-3vw;
+		}
+		.first{
+			border-radius: 2vw 2vw 0vw 2vw;
+			height: 1.1vw;
+			width: 1vw;
+			margin-left: 3.5vw;
+		}
+		.first>span{
+			margin-left: -3vw;
+		}
+		.second{
+			border-radius: 2vw 2vw 2vw 0vw;
+			height: 1.1vw;
+			width: 1vw;
+		}
+		.second>span{
+			margin-left: -2vw;
+		}
+		.second>img{
+			width: 650%;
+		}
+		.third{
+			border-radius: 2vw 0vw 2vw 2vw;
+			height:4.3vw;
+			width: 4vw;
+		}
+		.third>span{
+			margin-left: 0.5vw;
+			font-size: 1.5vw;
+			color: red;
+		}
+		.third>img{
+			width:260%;
+		}
+		.fourth{
+			border-radius: 0vw 2vw 2vw 2vw;
+			height: 1.1vw;
+			width: 1vw;
+		}
+		.fourth>span{
+			margin-left: -3.5vw;
+		}
+		#EnrollNowButton2{
+			position: absolute;
+			left: 11vw;
+			top: 107vw;
+			font-size: 1.5vw;
+			border: 1px white;
+			color: #ff4500;
+			background:white;
+			display: inline;
+			border-radius: 3vw;
+			padding: 1vw 4.6vw 1vw 1.5vw;
+			filter: drop-shadow(0.5px 0.5px 4px #aaa);
+		}
+		#EnrollNowButton2:hover{
+		    filter: drop-shadow(0.5px 0.5px 8px #777);
+		}
+		#EnrollNowButton2+img{
+		    position:absolute;
+		    left: 20.6vw;
+			top: 107.3vw;
+			width:3vw;
+		}
+		#MonktreeStore{
+			position: absolute;
+			left: 11vw;
+			top: 131vw;
+			font-size:3vw;
+			color:white;
+
+		}
+		#MonktreeStore>h6{
+		    color:orange;
+		    font-size:3vw;
+		    display:inline;
+		}
+		#MonktreeStore>p{
+		    font-size:1.2vw;
+		    color:white;
+		}
+		#VisitStore{
+			position: absolute;
+			left: 75vw;
+			top: 137vw;
+			width: 15vw;
+			filter: drop-shadow(0.5px 0.5px 1px #888);
+		}
+		#MonktreeStoreBooks{
+		    position:absolute;
+		    margin-left: 10vw;
+			top: 143vw;
+		}
+		a{
+			display: inline-block;
+			text-decoration: none;
+			cursor:pointer;
+			font-size: 1.5vw;
+			color: white;
+			font-family: sans-serif;
+			margin-right: 3vw;
+			padding: 3px 6px;
+			text-shadow:0.5px 0.5px #aaa;
+		}
+		.active{
+			border: 2px solid white;
+			border-radius: 20px;
+			box-shadow: 0 0 5px 0.3px #777;
+		}
+		.circle>div{
+			display: inline;
+			font-size:1vw;
+			border-radius: 50%;
+			background-color: #ffae42;
+		}
+			.flexbox1{
+			position: absolute;
+			display:flex;
+			grid-gap: 10px;
+			margin-top: 7vw;
+		}
+		.box1{
+			background-color: white;
+			padding: 6vw;
+			margin:1.5vw;
+			color:#444;
+			font-size: 1.2vw;
+			border-radius: 1.5vw;
+			filter: drop-shadow(0.5px 0.5px 7px #aaa);
+		}
+		.box1{
+			height: 4vw;
+			width: 6vw;
+		}
+		.box1>img{
+			width:200%;
+			margin-left: -2.7vw;
+			margin-top: -12vw;
+		}
+		.box1>span{
+			font-size: 0.9vw;
+			font-weight: bold;
+			margin-left: 2vw;
+		}
+		.box1>span>h3{
+			font-size:1.2vw;
+			color: #306efe;
+			margin-left: -2vw;
+			text-shadow: 0.5px 1px #aaa;
+		}
+		.box1:hover{
+			filter: drop-shadow(0.5px 0.5px 10px #222);
+		}
+		#SeeOffers{
+			position: absolute;
+			left: 15vw;
+			top: 177vw;
+			color:white;
+			font-size:1.6vw;
+		}
+		.flexbox{
+			position: absolute;
+			top: 195vw;
+			left: 20vw;
+			display:grid;
+			grid-gap: 4.5vw;
+			grid-template-columns: 2fr 2fr;
+
+		}
+		.box2{
+		    background-color: white;
+			padding: 6vw;
+			margin:0.6vw;
+			color:#444;
+			font-size: 1.2vw;
+			border-radius: 1.5vw;
+			box-shadow: 0 0 5px 0.3px #aaa;
+		}
+		.row2{
+			display: flex;
+		}
+		.one,.two,.three,.four{
+			height: 2.3vw;
+			width: 2.5vw;
+		}
+		.two,.three{
+		    margin-top:1.5vw;
+		}
+		.flexbox span{
+			font-size: 0.8vw;
+			position: absolute;
+			margin-top: 1.5vw;
+			margin-left: -5vw;
+			font-weight: bold;
+		}
+		.flexbox span>h{
+			font-size: 1.1vw;
+			color: #8A2BE2;
+		}
+		.two>img,.four>img{
+			margin-top: -6.5vw;
+			margin-left: -6.5vw;
+			width: 630%;
+		}
+		.four>h3,.two>h3{
+			margin-top: -5vw;
+			color: #ffffff;
+			margin-left: -4vw;
+			font-weight: bold;
+			font-size: 1.1vw;
+			text-shadow: 0.4px 0.4px #444;
+		}
+		.five{
+			height: 13vw;
+			width: 20vw;
+			margin-top: 1vw;
+
+		}
+		.five>img{
+			position: absolute;
+			margin-top: -6.3vw;
+			margin-left: -6.5vw;
+			width: 50.7%;
+		}
+		.five span{
+			font-size: 1.3vw;
+			position: absolute;
+			margin-top: 11vw;
+			font-weight: normal;
+			margin-left: -2vw;
+			color: white;
+		}
+		.five span>h{
+			font-size: 2.8vw;
+			color: #8A2BE2;
+			color: white;
+		}
+		.six{
+			height: 2.3vw;
+			width: 2.5vw;
+			margin-left: 0.5vw;
+			margin-top: 1vw;
+		}
+		.column2{
+			margin-top: -1vw;
+			margin-left: -18.5vw;
+		}
+		.flexbox>#CodingShastraDetails{
+			margin-left: 34vw;
+			margin-top: 0vw;
+			font-size: 1.3vw;
+			color:#777;
+		}
+		.flexbox>#CodingShastraDetails>h{
+			font-size: 2.6vw;
+			color: #832CAB;
+		}
+		.box2:hover{
+			box-shadow:0.5px 0.5px 10px #222;
+		}
+		.five:hover{
+		    color:blue;
+		}
+		#OurPartnershipsForYou{
+		    position: absolute;
+			top: 270vw;
+			left: 38vw;
+			color:#666;
+			font-weight:lighter;
+			font-size:2.2vw;
+			font-style:italic;
+			filter: drop-shadow(0.3px 0.3px 0.3px #aaa);
+		}
+		#OurPartnershipsForYou>h6{
+		   font-style:normal;
+		   display:inline;
+		   font-size:2vw;
+		   color:#4828EE;
+		}
+		.flexbox2{
+			position: absolute;
+			display:flex;
+			grid-gap: 10px;
+			top:285vw;
+			margin-left: 13vw;
+			transition: 2s;
+
+		}
+		.box3{
+			background-color: white;
+			padding: 6vw;
+			margin:1vw 1vw 0vw 1vw;
+			color:#666;
+			font-size: 1.2vw;
+			border-radius: 1.5vw;
+			height: 8vw;
+			filter: drop-shadow(0.5px 0.5px 2px #aaa);
+		}
+		.prathama{
+			width: 20vw;
+		}
+		.prathama>span{
+			position: absolute;
+			margin-left: -3vw;
+			margin-top: -3vw;
+			font-size:1.6vw;
+			font-weight: bold;
+		}
+		.prathama>#triangle{
+			width: 11vw;
+			margin-left: 8vw;
+			margin-top: -2vw;
+		}
+		.prathama>#circle{
+			width: 9vw;
+			margin-left: 16vw;
+			margin-top: -5vw;
+		}
+
+		
+		.dwitiya{
+			width: 10vw;
+		}
+		.dwitiya>span{
+			position: absolute;
+			margin-top: -4vw;
+			margin-left: -5vw;
+			color: #999;
+			font-size:1.25vw; 
+			font-weight: bold;
+		}
+
+		.dwitiya>span>h{
+			font-size:1.55vw; 
+			color: #666;
+		}
+		.dwitiya>t{
+			font-family: Seoge UI;
+			position: absolute;
+			font-size:1.2vw; 
+			font-weight: bold;
+			margin-top: 8vw;
+			margin-left: 0.5vw;
+			color: #fff;
+			text-shadow: 1px 1px #aaa;
+			background: linear-gradient(to right, rgb(126, 9, 189), rgb(5, 142, 243));;
+			border-radius: 50vw;	
+			padding: 0.5vw 1.8vw 0.5vw 1.8vw; 
+			cursor: pointer;
+		}
+		.dwitiya>t:hover{
+			filter: drop-shadow(3px 3px 15px #777);
+		}
+		.tritiya{
+			margin-left: 11vw;
+			width: 20vw;
+		}
+		.tritiya>img{
+			margin-top: -6.4vw;
+			margin-left: -6.5vw;
+			width:170%; 
+		}
+		.box3:hover{
+			filter: drop-shadow(1px 1px 7px #444);
+		}
+	.rightcarousel{
+            position: absolute;
+            display:flex;
+            grid-gap: 10px;
+            top:285vw;
+			margin-left: -4vw;
+			transition: 2s;
+            margin-top: 0vw; 
+        }
+    button{
+            background: none;
+            border: none;
+        }
+    .move{
+        font-size: 3vw; 
+		margin-top: 37vw;
+		color: rgb(130,96,231);
+    }
+    .left{
+        margin-left: 5vw;
+    }
+    .right{
+        margin-left: 58vw;
+    }
+		#RegisterButton{
+			position: absolute;
+			left: 13vw;
+			top: 4.7vw;
+			font-size: 1.2vw;
+			border: 1px white;
+			color: #ff4500;
+			background:white;
+			text-shadow: none;
+			font-weight: bold;
+			display: inline;
+			border-radius: 3vw;
+			padding: 0.6vw 3.8vw 0.6vw 1.2vw;
+			filter: drop-shadow(0.5px 0.5px 4px #777);
+		}
+		#RegisterButton:hover{
+		    filter: drop-shadow(0.5px 0.5px 8px #444);
+		}
+		#RegisterButton+img{
+		    position:absolute;
+		    left: 20vw;
+			top: 5vw;
+			width:2vw;
+		}
+		#big{
+			position: absolute;
+			margin-top: 3vw;
+			left: 17vw;
+			width: 66vw;
+			height: 12vw;
+			border-radius: 2vw;
+			background-color: rgb(130,96,231);
+			filter: drop-shadow(0px 5px 10px #8260e7);
+		}
+		#medium{
+			position: absolute;
+			left: 20vw;
+			width: 46vw;
+			height: 12vw;
+			border-radius: 6vw 2vw 2vw 6vw;
+			background-color: rgb(150,122,234);
+		}
+		#small{
+			position: absolute;
+			left: 15vw;
+			width: 31vw;
+			height: 12vw;
+			border-radius: 6vw 2vw 2vw 6vw;
+			background-color: rgb(167,143,237);;
+		}
+		#Looking{
+			position: absolute;
+			top: 2.5vw;
+			left: 4vw;
+			font-weight: bold;
+			color: #fff;
+			font-size: 2.2vw;
+		}
+
+        #footer{
+        	position:absolute;
+	        top: 335vw;
+            display:flex;
+            padding:0vw 18vw 0vw 18vw ;
+        }
+        #footer div{
+            width:14vw;
+            padding-left: 0vw;
+            padding-right:0vw;
+        }
+        #footer div a:first-child{
+            font-weight: bolder;
+        }
+        #footer div a{
+            text-decoration: none;
+			color: #666;
+			text-shadow: none;
+            display:block;
+            font-size:1.3vw;
+			padding-bottom:5px;
+		}
+		#footer div a:hover{
+			font-size: 1.4em;
+			color: #FF6347;
+		}
+        #orange>span{
+            color: #FF6347;
+            text-shadow: 0.5px 0.5px 1px #ccc;
+        }
+
+        #purple>span{
+            color: #8A2BE2;
+            text-shadow: 0.5px 0.5px 1px #ccc;
+        }
+        #FollowUs{
+            color:#666;
+            font-style:italic;
+            position:absolute;
+            left:90vw;
+            font-size:1.2vw;
+            margin-top: 35vw;
+        }
+	.follow>hr{
+		position: absolute;
+		width: 100.3vw;
+		margin-top: 1.8vw;
+		margin-left: -1vw;
+		border: 0.5px solid #ccc;
+		z-index: -1;
+	}
+	.socialmedia{
+		display: flex;
+		margin-left: 87vw;
+		margin-top: 38vw;
+		margin-bottom: 10vw;
+	}
+	.socialmedia>.circle {
+      	width: 2.7vw;
+      	height: 2.7vw;
+      	background: #fff;
+      	bottom: -200vw;
+      	margin: 0.5vw;
+      	border-radius: 50%;
+      	filter: drop-shadow(0.1vw 0.1vw 0.5vw #aaa);
+    }
+    .icon{
+    		position: absolute;
+    	   	color: #8A2BE2;
+            font-size:1.2vw;
+            margin-left: 0.4vw;
+    		margin-top: 0.3vw;
+    }

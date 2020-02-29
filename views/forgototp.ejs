@@ -1,0 +1,228 @@
+<!-- 	#ED1B24
+	#FFFFFF
+	#FFECED -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			.bg{
+				display:flex;
+				z-index:-1;
+				position:fixed;
+				margin-top: -30vh;
+			}
+			#error{
+			    font-size:10px;
+			}
+			.item{
+				height:100vh;
+				z-index: -1;
+			}
+			.red{
+				width:50vw;
+				background: linear-gradient(to top right, #ff4f4f,#f90000);
+				opacity:0.9;
+			}
+			.white{
+				width:50vw;
+				background-color: #ffffff;
+			}
+			.svg{
+				position: relative;
+			}
+			.svg1{
+				position: absolute;
+				right:0;
+				top : 20vh;
+			}
+			.svg2{
+				position: absolute;
+				right:0;
+				top : 28vh;
+			}
+			.svg3{
+				position: absolute;
+				right: 23vh;
+				top:24vh;
+			}
+			.heading{
+				text-align: center;
+			}
+#MonktreeIcon{
+	position: absolute;
+	left: 5vw;
+	top: 5vh;
+	width: 17vw;
+}
+.bg>span{
+	position: absolute;
+	font-size: 1.8vw;
+	color: #fff;
+	left: 10vw;
+	top: 45vh;
+}
+#GoBack{
+    position: absolute;
+    width: 2vw;
+    left: 4vw;
+    top: 83vh;
+}
+h5{
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.5vw;
+    left: 6.5vw;
+    top: 82.7vh;
+
+}
+
+form {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 20vw;
+    margin-top: 30vh;
+    background: #FfFfFf;
+    filter: drop-shadow(1px 1px 5px #777);
+    padding: 25px 25px 25px 25px;
+    border-radius: 5%;
+    font-family: Segoe UI;
+}
+h1 {
+    font-size: 20px;
+    margin: 0vh 0vh 5vh 0vh;
+    color: #555;
+    text-shadow: 0px 2px #ccc;
+    text-align: center;
+
+}
+.underline-small{
+	position:relative;
+}
+h1::after{
+  display: inline-block;
+  content:'';
+  height:2px;
+  width:12%;
+  background:#555;
+  position:absolute;
+  left:calc(44%);
+  bottom:-5px;
+}
+input[type="text"], select {
+    height: 30px;
+    font-family: Segoe UI;
+    margin-bottom: 16px;
+    padding: 3px 3px 3px 5px;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid;
+    border-color: #999;
+    background-color: #FfFfFf;
+
+}
+
+#submit {
+    background:#f90000;
+    opacity:0.8;
+    color: #FFF;
+    width: 50%;
+    margin-left:5vw;
+    padding: 1vw 0vw 1vw 0vw;
+    margin-bottom: 16px;
+    border:1px solid hidden;
+    border-radius: 50vw;
+    cursor: pointer;
+}
+#submit:hover {
+     opacity:1;
+}
+h6{
+	text-align: center;
+	font: 11px solid;
+	color: #555;
+}
+h6>a{
+	color: #f00;
+	text-decoration: none;
+}
+@media only screen and (max-width:500px) and (max-height:1000px){
+#MonktreeIcon{
+	width: 45vw;
+}
+.bg{
+margin-top:-20vh;
+}
+.bg>span{
+font-size: 0vw;
+}
+#GoBack{
+width: 7vw;
+}
+
+h5{
+font-size: 5.5vw;
+left: 12vw;
+}
+form {
+margin-left: 5vw;
+margin-right: 5vw;
+margin-top: 20vh;
+max-width: 90vw;
+padding: 50px 50px 50px 50px;
+}
+h1 {
+font-size: 20px;
+}
+input[type="text"], select {
+height: 50px;
+margin-bottom: 30px;
+font-size: 3vw;
+padding: 5px 5px 5px 5px;
+}
+#submit {
+width: 80%;
+font-size: 3vw;
+margin-left: 10%;
+}
+}
+
+</style>
+	</head>
+	<body>
+		<div class="bg">
+			<div class="red item"></div>
+			<div class="white item">
+				<div class="svg">
+					  <svg	class = 'svg1 outer'width = '31vh'height = '62vh'>
+						<circle cx="30vh" cy="30vh" r="29vh" stroke="#FFECED" stroke-width="1vh" fill="white" />
+					  </svg>
+					  <svg	class = 'svg2 inner' width="22vh" height="44vh">
+						<circle cx="22vh" cy="22vh" r="14vh" stroke="#FFECED" stroke-width="8vh" fill="white" />
+					  </svg>
+					  <svg	class = 'svg3' width="4vh" height="4vh">
+						<circle cx="2vh" cy="2vh" r="2vh"  fill="#FFECED" />
+				  	  </svg>
+				</div>
+			</div>
+			<img id="MonktreeIcon" src="/static/images/MonktreeIcon.png">
+			<span>Check Your Mail Account !</span>
+			<a href="/">
+			<img id="GoBack" src="/static/images/GoBackIcon.png">
+   			 <h5>Home</h5></a>
+			</div>
+	<form action="/backend/forgototp" method="post">
+    <h1 class="underline-small">Enter OTP</h1>
+    	<p style = "color:red;text-align: center;"></p>
+        <input id="OTP" type="text" name="otp" placeholder="* * * * * *" title="Enter the OTP which you received" minlength="6" maxlength="6" pattern="^[0-9][a-z][A-Z]{}$" required="true" />
+        <input id="submit" type="submit" value="Verify" />
+</form>
+	</body>
+	</html>

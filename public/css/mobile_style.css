@@ -1,0 +1,362 @@
+.desktop{
+    display:none;
+}
+.mobile{
+    display:initial;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F1F5FF;
+    position: relative;
+    font-family:Segoe UI;
+}
+#bg{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    z-index:-1;
+}
+#bg2{
+    position: absolute;
+    top:400vw;
+    left:0;
+    width:100vw;
+    z-index:-1;
+}
+#MonktreeIcon{
+    width:45vw;
+}
+#Hiring{
+    position: absolute;
+    display: inline-block;
+    text-decoration: none;
+    cursor:pointer;
+    left: 47vw;
+    top: 3vw;
+    font-size: 4.5vw;
+    color: white;
+    font-family: sans-serif;
+    margin-right: 3vw;
+    padding: 7px;
+    text-shadow:0.5px 0.5px #aaa;
+    background-color: rgba(255,255,255,0.2);
+}
+.circle_>div{
+    display: inline;
+    font-size:2.5vw;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#hassle{
+    text-align: left;
+    color:white;
+    font-size: 25px;
+    padding: 55px 0px 0px 30px;
+    text-shadow: 1px 1px 3px #aaa;
+}
+#hassle #p2{
+    font-size: 20px;
+    padding:35px 0px 100px 0px;
+    text-shadow: 1px 1px 3px #aaa;
+}
+#SmilingBoyAndGirl{
+    width:100vw;
+    text-align: center;
+    margin-left: -15px;
+    margin-top: -20px;
+    opacity: 0.8;
+}
+#SmilingBoyAndGirl img{
+    width:55vw;
+    height:35vw;
+    box-shadow: 5vw -5vw 0px 0px #fdddd0;
+	border-radius: 1vw;
+}
+.EnterEmail{
+    background: none;
+    border: 1px solid white;
+    border-radius:3px 0px 0px 3px;
+    height: 10vw;
+    margin-top: 14vw;
+    padding-left: 5vw;
+    margin-left: 8vw;
+    width: 200px;
+}
+#EnrollNowButton{
+    height: 10.5vw;
+    width: 130px;
+    color: #ff4550;
+    background-color: white;
+    margin-left: -1.2vw;
+    border: 1px solid white;
+    border-radius: 0px 5px 5px 0px;
+}
+#KnowMore {
+    width:100vw;
+    text-align: center;
+    padding-top: 7vh;
+    font-size:3.5vw;
+    text-shadow: 1px 1px 3px #aaa;
+}
+#KnowMore a{
+    text-decoration:none;
+    color:white;
+}
+#para{
+    margin-top:200px;
+    padding:40px;
+}
+#headline1{
+    font-size: 30px;
+    color:#888;
+    text-shadow:1px 1px 1px #ccc;
+    margin-bottom: 2vw;
+}
+#headline2{
+    font-size: 30px;
+    color:#FE9100;
+    text-shadow:1px 1px 1px #ccc;
+}
+#text{
+    margin-top: 5vw;
+    color:#888;
+    padding-bottom: 10vw;
+}
+.grid-wrapper{
+    position: absolute;
+    text-align: center;
+    margin-left: 18vw;
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 2fr;
+    filter: drop-shadow(0.5px 0.5px 3px #aaa);
+}
+.box{
+    background-color: white;
+    padding: 13vw;
+    margin:0.6vw;
+    color:#444;
+    font-size: 1.8vw;
+}
+
+.box:hover{
+    filter: drop-shadow(0.1px 0.1px 5px #aaa);
+}
+.box>img{
+    width: 1500%;
+    margin-top: -8vw;
+    margin-left:-6vw;
+}
+.first{
+    border-radius: 4vw 4vw 0vw 4vw;
+    height: 1.1vw;
+    width: 1vw;
+    margin-left: 6vw;
+}
+.first>span{
+    margin-left: -5vw;
+}
+.second{
+    border-radius: 4vw 4vw 4vw 0vw;
+    height: 1.1vw;
+    width: 1vw;
+}
+.second>span{
+    margin-left: -3.7vw;
+}
+.second>img{
+    width: 1430%;
+}
+.third{
+    border-radius: 4vw 0vw 4vw 4vw;
+    height:7vw;
+    width: 6.5vw;
+}
+.third>span{
+    font-size: 2.2vw;
+    color: red;
+}
+.third>img{
+    width:370%;
+    margin-left: -8vw;
+    margin-top: -9vw;
+}
+.fourth{
+    border-radius: 0vw 4vw 4vw 4vw;
+    height: 1.1vw;
+    width: 1vw;
+}
+.fourth>span{
+    margin-left: -5.5vw;
+}
+#EnrollNowButton1{
+    position: absolute;
+    left: 35vw;
+    margin-top: 82vw;
+    font-size: 3vw;
+    border: 1px white;
+    color: #ff4500;
+    background:white;
+    display: inline;
+    border-radius: 7vw;
+    padding: 2vw 9vw 2vw 4vw;
+    filter: drop-shadow(0.5px 0.5px 4px #777);
+}
+#EnrollNowButton1:hover{
+    filter: drop-shadow(0.5px 0.5px 8px #444);
+}
+#EnrollNowButton1+img{
+    position:absolute;
+    left: 56vw;
+    margin-top: 83vw;
+    width:5vw;
+}
+#MonktreeStore{
+    position: absolute;
+    left: 5vw;
+    margin-top: 130vw;
+    font-size:6vw;
+    color:white;
+
+}
+#MonktreeStore>h6{
+    color:orange;
+    font-size:6vw;
+    display:inline;
+}
+#VisitStore{
+    position: absolute;
+    left: 63vw;
+    margin-top: 130vw;
+    width: 30vw;
+    filter: drop-shadow(0.5px 0.5px 1px #888);
+}
+#MonktreeStoreBooks{
+    margin: 140vw 0vw 0vw 8vw;
+    width:100vw;
+    text-align: center;
+}
+.flexbox1{
+    position: absolute;
+    display:flex;
+    grid-gap: 10px;
+    margin-top: 7vw;
+}
+.box1{
+    background-color: white;
+    padding: 11vw;
+    margin:4.5vw;
+    color:#444;
+    font-size: 1.2vw;
+    border-radius: 1.5vw;
+    filter: drop-shadow(0.5px 0.5px 7px #aaa);
+}
+.box1{
+    height: 4vw;
+    width: 6vw;
+}
+.box1>img{
+    width:300%;
+    margin-left: -5.5vw;
+    margin-top: -21vw;
+}
+.box1>span{
+    font-size: 2vw;
+    font-weight: bold;
+    margin-left: 1vw;
+}
+.box1>span>h3{
+    font-size:2.5vw;
+    color: #306efe;
+    margin-left: -7vw;
+    margin-top: 2vw;
+    text-shadow: 0.5px 1px #aaa;
+}
+.box1:hover{
+    filter: drop-shadow(0.5px 0.5px 10px #222);
+}
+#SeeOffers{
+    position: absolute;
+    font-size:3.5vw;
+    color: #fff;
+    margin-left: 15vw;
+    top: 480vw;
+}
+#footer{
+    display:flex;
+    margin:230vw 10vw 4vw 10vw ;
+}
+#footer div{
+    width:25vw;
+    padding-left: 1vw;
+    padding-right:1vw;
+}
+#footer div a:first-child{
+    font-weight: bolder;
+}
+#footer div a{
+    text-decoration: none;
+    color: #888;
+    display:block;
+    font-size:15px;
+    padding-bottom:8px;
+}
+#orange>span{
+    color: #FF6347;
+    font-size: 17px;
+    text-shadow: 0.5px 0.5px 1px #ccc;
+}
+
+#purple>span{
+    color: #8A2BE2;
+    font-size: 17px;
+    text-shadow: 0.5px 0.5px 1px #ccc;
+}
+/*start of nav*/
+
+@media screen and (max-width: 2000px){
+.topnav a:not(:last-child) {display: none;}
+.icon{
+position:absolute;
+right:5vw;
+top:2vw;
+height: 50vh;
+}
+}
+@media screen and (max-width: 2000px){
+.responsive{
+padding-top:10vh;
+padding-bottom: 40vh;
+width:80vw;
+height:100vw;
+background-color:white;
+}
+.responsive a{
+display: block;
+text-decoration: none;
+margin-top: 28px;
+margin-left: 8vw;
+color: orange;
+text-shadow: 1px 1px 0.5px #ccc;
+font-size: 1.8em;
+font-family: Segoe UI;
+}
+#icon{
+color: white;
+font-size:8vw;
+}
+.responsive>a>#LoginButton{
+    border: 2px solid orange;
+    padding: 5px 20px 5px 20px;
+    border-radius: 50vw;
+	box-shadow: 0 0 3px 0.3px #aaa;
+}

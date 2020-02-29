@@ -1,0 +1,22 @@
+*{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            height:100vh;
+        }
+        .topnav{
+            display: none;
+        }
+        .responsive{
+            position: absolute;
+            z-index:1;
+            width:60vw;
+            background-color:#32436F;
+            overflow: visible;
+        }
+        .responsive #links a{
+            color:white;
+            paddin
+        }

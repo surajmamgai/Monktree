@@ -1,0 +1,99 @@
+<!-- 
+    #32436F or #324370 sidebar
+    #238cea #0c63c2 blue box gredient
+    #ff2969 red dot
+    #ff0000 activity color
+    #ffa114 #ff0872 highlight
+    #707070 bar between notification and logout
+     #ff0057 activity bar
+    #f2f2f2
+     -->
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" media="screen and (min-device-width: 601px)" href=" static/css/desktop_dashboard_style.css" />
+         <link rel="stylesheet" media="screen and (max-device-width: 600px)" href="static/css/mobile_dashboard_style.css" />
+         <title>Monktree-Dashboard</title>
+         <style type="text/css">
+             
+         </style>
+     </head>
+     <body>
+         <script>
+             function myFunction() {
+                 var x = document.getElementById("sidebar");
+                 if (x.className === "topnav") {
+                     x.className = " responsive";
+                 } else {
+                     x.className = "topnav";
+                 }
+             }
+         </script>
+         <div id="container">
+             <div id="sidebar" class="topnav">
+                 <a href="javascript:void(0);" class="icon" id="close" onclick="myFunction()">
+                     <i class="fa fa-times"></i>
+                 </a>
+                 <div id="MonktreeIcon"><img src="static/images/MonktreeIcon.png">
+                     <span>beta</span></div>
+                 <div id="links">
+                     <a id="dashboard" class="active" href="#">Dashboard</a><br>
+                     <a href="#">History</a><br>
+                     <a href="#">My bag</a><br>
+                     <a href="#">Resources</a><br>
+                     <a href="#">Internship</a><br>
+                     <a href="#">Courses</a><br>
+                     <a href="#">Profile</a><br>
+                     <a href="#">Payment</a><br>
+                     <a id="discussion" href="#">Discussion</a><br>
+                     <a href="#">Contact</a><br>
+                     <a href="#">About</a><br>
+                     <a href="#">Report</a>
+                 </div>
+             </div>
+             <div id="main">
+     
+                 <nav id="navbar">
+                     <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">
+                         <i class="fa fa-bars"></i>
+                     </a>
+                     <span id="username"><%= user %></span>
+                     <div class="notification-dot">
+                         <img id="notification" src="static/images/notification.png">
+                         <span id="red-dot"></span>
+                     </div>
+                     <span id="bar"></span>
+                     <a href="/backend/logout"><img id="logout" src="static/images/logout.png"></a> 
+                 </nav>
+                 
+                 <div id="body">
+                     <div id="extra"></div>
+                     <div  id="activity">
+                         <span>Activity</span>                
+                     </div>
+                     <div id="greet">
+                         <span><b>Hi Demo,</b><i>How are you today?</i></span>
+                     </div>                
+                     <div id="two-box">
+                         <div id="what-is-new">What is new?</div>
+                         <div id="blue-box"></div>
+                     </div>
+                     <div id="activity-bar-container">
+                         <div id="activity-bar">
+                             <div>
+                                 <span>Registerd</span>
+                                 <span>Verified!</span>
+                                 <span>Payment done</span>
+                                 <span>Books Delivered!</span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </body>
+     </html>
