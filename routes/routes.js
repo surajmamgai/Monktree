@@ -47,7 +47,7 @@ router.post('/mobile',[
     //     res.cookie('otp',otp);
     //     res.redirect('/otp');
     // });
-    var request = require("request");
+    
 
     var options = { method: 'POST',
     url: 'https://www.fast2sms.com/dev/bulk',
@@ -63,12 +63,12 @@ router.post('/mobile',[
     json: true };
 
     request(options, function (error, response, body) {
-       if (error) res.redirect('/mobile');
+        if (error) res.redirect('/mobile');
 
-        res.cookie('mobile',req.body.mobile);
+       res.cookie('mobile',req.body.mobile);
         res.cookie('otp',otp);
         res.redirect('/otp');
-});
+    });
 
         }
     }).catch(err => {
