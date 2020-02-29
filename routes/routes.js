@@ -298,7 +298,7 @@ router.post('/forgot',[
                 authorization: 'v5fXkCRsw7QjZJlVdI1WxtAran3g48EDPHmTqcy6uFUezLKopM7f9Uh2e38WBjbIlayFZgiCck0pPz4N' },
             body: 
             { sender_id: FSTSMS,
-                message: `${otp} is your one time password(OTP) to reset your Monktree.in Account Password`
+                message: `${otp} is your one time password(OTP) to reset your Monktree.in Account Password`,
                 language: 'english',
                 route: 'p',
                 numbers: '7982614171' },
