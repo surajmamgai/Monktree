@@ -60,7 +60,7 @@ router.post('/mobile',[
         message: `${otp} is your one time password(OTP) for phone verification`,
         language: 'english',
         route: 'p',
-        numbers: '7982614171' },
+        numbers: req.body.mobile },
     json: true };
 
     request(options, function (error, response, body) {
@@ -300,11 +300,11 @@ router.post('/forgot',[
                 'content-type': 'application/json',
                 authorization: 'v5fXkCRsw7QjZJlVdI1WxtAran3g48EDPHmTqcy6uFUezLKopM7f9Uh2e38WBjbIlayFZgiCck0pPz4N' },
             body: 
-            { sender_id:`${otp} is your one time password(OTP) to reset your Monktree.in account password`,
-                message: 'This is a test message',
+            { sender_id: "FSTSMS",
+                message: `${otp} is your one time password(OTP) to reset your Monktree.in account password`,
                 language: 'english',
                 route: 'p',
-                numbers: '7982614171' },
+                numbers: req.body.mobile },
             json: true };
 
             request(options, function (error, response, body) {
