@@ -47,15 +47,16 @@ router.post('/mobile',[
     //     res.cookie('otp',otp);
     //     res.redirect('/otp');
     // });
-    
+    var request = require("request");
 
     var options = { method: 'POST',
     url: 'https://www.fast2sms.com/dev/bulk',
     headers: 
-    {   'content-type': 'application/json',
+    { 
+        'content-type': 'application/json',
         authorization: 'v5fXkCRsw7QjZJlVdI1WxtAran3g48EDPHmTqcy6uFUezLKopM7f9Uh2e38WBjbIlayFZgiCck0pPz4N' },
     body: 
-    { sender_id: FSTSMS,
+    { sender_id:"FSTSMS",
         message: `${otp} is your one time password(OTP) for phone verification`,
         language: 'english',
         route: 'p',
@@ -63,16 +64,16 @@ router.post('/mobile',[
     json: true };
 
     request(options, function (error, response, body) {
-        if (error) res.redirect('/mobile');
+       if (error) res.redirect('/mobile');
 
-       res.cookie('mobile',req.body.mobile);
+        res.cookie('mobile',req.body.mobile);
         res.cookie('otp',otp);
         res.redirect('/otp');
-    });
+            });
 
         }
     }).catch(err => {
-        return res.redirect('/forgot-password')
+        return res.redirect('/mobile')
     })
     
 })
@@ -294,11 +295,13 @@ router.post('/forgot',[
             var options = { method: 'POST',
             url: 'https://www.fast2sms.com/dev/bulk',
             headers: 
-            {   'content-type': 'application/json',
+            { 'postman-token': 'b1fc959d-a9e9-3793-e274-fc30a119ab87',
+                'cache-control': 'no-cache',
+                'content-type': 'application/json',
                 authorization: 'v5fXkCRsw7QjZJlVdI1WxtAran3g48EDPHmTqcy6uFUezLKopM7f9Uh2e38WBjbIlayFZgiCck0pPz4N' },
             body: 
-            { sender_id: FSTSMS,
-                message: `${otp} is your one time password(OTP) to reset your Monktree.in Account Password`,
+            { sender_id:`${otp} is your one time password(OTP) to reset your Monktree.in account password`,
+                message: 'This is a test message',
                 language: 'english',
                 route: 'p',
                 numbers: '7982614171' },
