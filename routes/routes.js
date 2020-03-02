@@ -191,7 +191,7 @@ router.post('/personal', mobileAuth,async (req,res) => {
       'content-type': 'application/json' },
    body: 
     { mobile: req.mobile,
-        name: 'Aman',
+        name: user.name,
         father: user.father,
         gender: user.gender,
         dob: user.dob,
