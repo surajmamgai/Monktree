@@ -23,7 +23,7 @@
         .active{
             background: linear-gradient(to right, rgb(254, 163, 22), rgb(244, 12, 112));
             margin-left: -10vw;
-            padding: 3vw 31.1vw 3vw 10vw;
+            padding: 3vw 30.7vw 3vw 10vw;
             box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.161);
         }
         hr{
