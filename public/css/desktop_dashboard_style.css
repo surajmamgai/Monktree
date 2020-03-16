@@ -40,12 +40,17 @@ body{
 #sidebar a i{
     display: none;
 }
-#dashboard{
-    margin-top: 6vw;
-
+hr{
+    margin-left: -10vw;
 }
 #discussion{
-    padding-top: 4.8vw;
+    padding-top: 1.8vw;
+}
+.active{
+    background: linear-gradient(to right, rgb(254, 163, 22), rgb(244, 12, 112));
+    margin-left: -10vw;
+    padding: 1vw 7vw 1vw 10vw;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.161);
 }
 #main{
     width:83.8vw;
