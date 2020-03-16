@@ -12,7 +12,7 @@
         .responsive{
             position: absolute;
             z-index:1;
-            width:68vw;
+            width:60vw;
             background-color:#304270;
             overflow: visible;
             height: 102vh;
@@ -23,7 +23,7 @@
         .active{
             background: linear-gradient(to right, rgb(254, 163, 22), rgb(244, 12, 112));
             margin-left: -10vw;
-            padding: 3vw 39.5vw 3vw 10vw;
+            padding: 3vw 31.1vw 3vw 10vw;
             box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.161);
         }
         hr{
@@ -136,7 +136,7 @@
             margin-right: 3vw;
             background-color: white;
             padding: 0.4vw 1.1vw;
-            color: #f6332E;
+            color: #d6332E;
             font-size: 1.4em;
             font-weight: bold;
             box-shadow: 2px 2px 5px 1px #ccc;
@@ -185,4 +185,22 @@
         }
         #activity-bar-container{
             display: none;
+        }
+
+
+
+
+
+
+
+
+
+        /*will be changed*/
+        #imgs{
+            margin-top: 10vw;
+            margin-left: 8vw;
+            width: 84vw;
+        }
+        #imgs img{
+            width: 100%;
         }
