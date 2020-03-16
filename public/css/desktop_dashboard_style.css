@@ -129,6 +129,9 @@ body{
     font-size: 1.5em;
     margin-left: 5vw;
 }
+#greet span br{
+            display: none;
+        }
 #two-box{
     margin-top: 2.5vw;
     display: flex;

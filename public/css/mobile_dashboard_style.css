@@ -12,11 +12,170 @@
         .responsive{
             position: absolute;
             z-index:1;
-            width:60vw;
+            width:65vw;
             background-color:#32436F;
             overflow: visible;
         }
         .responsive #links a{
             color:white;
-            paddin
+        }
+        .active{
+            background-color: orangered;
+            margin-left: -10vw;
+            padding: 3vw 37vw 3vw 10vw;
+            box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.161);
+        }
+        hr{
+            margin-left: -10vw;
+        }
+        .icon{
+            position: absolute;
+            left: 3vw;
+            font-size: 8vw;
+        }
+        #container{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        #links{
+            margin-left:5.5vw;
+            margin-bottom: 2vw;
+        }
+        #MonktreeIcon{
+            margin-left: 4vw;
+        }
+        #MonktreeIcon img{
+            width:30vw;
+        }
+        #sidebar a{
+            color:white;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 5.5vw;
+            font-weight: normal;
+            margin-bottom:8.3vw;
+        }
+        #sidebar a i{
+            display: none;
+        }
+        #dashboard{
+            margin-top: 6vw;
+        
+        }
+        #discussion{
+            padding-top: 4.8vw;
+        }
+        #main{
+            width:100vw;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        #navbar{
+            height:15vw;
+            width:100vw;
+            box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.161);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            background-color: white;
+            position: absolute;
+        } 
+        #username{
+            margin-right: 2vw;
+            margin-top: -0.8vw;
+            font-size: 2.2em;
+            color:#707070;
+        }
+        #notification-dot{
+            position: relative;
+        }
+        #notification{
+            margin-right: 2vw;
+            width:12vw;
+        }
+        #red-dot{
+            position: absolute;
+            top:2vw;
+            right:19vw;
+            width:1.5vw;
+            height:1.5vw;
+            border:0px solid hidden;
+            border-radius: 0.8vw;
+            background-color: #ff2969;
+        }
+        #bar{
+            margin-right: 2vw;
+            width:3px;
+            height:10vw;
+            background-color: #c0c0c0;
+        }
+        #logout{
+            margin-right: 1.5vw;
+            width:12vw;
+        }
+        #body{
+            background-color: #f2f2f2;
+            display:flex;
+            flex-direction: column;
+            height:100vh;
+        }
+        #extra{
+            margin-top: 3.5vw;
+        }
+        #activity{
+            display: flex;
+            margin-top: 25vw;
+            justify-content: flex-end;
+        }
+        #activity span{
+            margin-right: 2.5vw;
+            background-color: white;
+            padding: 0.6vw 1.4vw;
+            color: #ff0000;
+            font-size: 1.5em;
+            font-weight: bold;
+            box-shadow: 2px 2px 5px 1px #ccc;
+        }
+        #greet{
+            margin-top:-7vw;
+            display: flex;
+            align-items: center;
+        }
+        #greet span{
+            color: #616161;
+            font-size: 1.5em;
+            margin-left: 5vw;
+        }
+        #greet span i{
+            font-style: normal;
+        }
+        #two-box{
+            margin-top: 12vw;
+            display: block;
+            flex-direction: row;
+            align-items: center;
+        }
+        #what-is-new{
+            margin-left: 8vw;
+            width:84vw;
+            height:50vw;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0px 27px 42px rgba(0, 0, 0, 0.161);
+            padding:1.8vw 1.5vw;
+            color:#616161; 
+        }
+        #blue-box{
+            margin-top: 10vw;
+            margin-left:8vw;
+            width:84vw;
+            height:50vw;
+            border-radius: 5px;
+            background:linear-gradient(to bottom right, #238cea, #0c63c2); ;
+            box-shadow: 0px 27px 42px rgba(0, 0, 0, 0.161);
+        }
+        #activity-bar-container{
+            display: none;
         }
