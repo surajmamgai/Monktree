@@ -129,6 +129,7 @@
         }
         #activity{
             display: flex;
+z-index: 2;
             margin-top: 20vw;
             justify-content: flex-end;
         }
