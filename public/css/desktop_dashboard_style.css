@@ -110,8 +110,9 @@ body{
     margin-top: 3vw;
     justify-content: flex-end;
 }
-#activity span{
+#activity a{
     margin-right: 5.5vw;
+    text-decoration: none;
     background-color: white;
     padding: 0.3vw 0.7vw;
     color: #ff0000;
