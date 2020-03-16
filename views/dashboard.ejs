@@ -24,19 +24,24 @@
      </head>
      <body>
          <script>
-             function myFunction() {
-                 var x = document.getElementById("sidebar");
-                 if (x.className === "topnav") {
-                     x.className = " responsive";
-                 } else {
-                     x.className = "topnav";
-                 }
+                 function myFunction() {
+			var w = document.getElementById("body");
+			var y = document.getElementById("icon");
+			var x = document.getElementById("sidebar");
+			if (x.className === "topnav") {
+				y.innerHTML= "<i class='fa fa-times'/>";
+				x.className = " responsive";
+				w.style.overflowY="hidden";
+			} else {
+				y.innerHTML= "<i class='fa fa-bars'/>";
+				x.className = "topnav";
+				w.style.overflowY="scroll";
+			}
              }
          </script>
          <div id="container">
              <div id="sidebar" class="topnav">
                  <a href="javascript:void(0);" class="icon" id="close" onclick="myFunction()">
-                     <i class="fa fa-times"></i>
                  </a>
                  <div id="MonktreeIcon"><img src="static/images/MonktreeIcon.png"></div>
                  <div id="links">
@@ -73,7 +78,7 @@
                  <div id="body">
                      <div id="extra"></div>
                      <div  id="activity">
-                         <span>Activity</span>                
+                         <span>Activities</span>                
                      </div>
                      <div id="greet">
                          <span><b>Hi <%= user %>, </b><br><i>How are you today?</i></span>
