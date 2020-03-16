@@ -12,17 +12,18 @@
         .responsive{
             position: absolute;
             z-index:1;
-            width:65vw;
-            background-color:#32436F;
+            width:68vw;
+            background-color:#304270;
             overflow: visible;
+            height: 102vh;
         }
         .responsive #links a{
             color:white;
         }
         .active{
-            background-color: orangered;
+            background: linear-gradient(to right, rgb(254, 163, 22), rgb(244, 12, 112));
             margin-left: -10vw;
-            padding: 3vw 37vw 3vw 10vw;
+            padding: 3vw 39.5vw 3vw 10vw;
             box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.161);
         }
         hr{
@@ -32,6 +33,7 @@
             position: absolute;
             left: 3vw;
             font-size: 8vw;
+            z-index: 3;
         }
         #container{
             display:flex;
@@ -44,9 +46,10 @@
         }
         #MonktreeIcon{
             margin-left: 4vw;
+            margin-top: 1vw;
         }
         #MonktreeIcon img{
-            width:30vw;
+            width:40vw;
         }
         #sidebar a{
             color:white;
@@ -54,7 +57,7 @@
             display: inline-block;
             font-size: 5.5vw;
             font-weight: normal;
-            margin-bottom:8.3vw;
+            margin-bottom:6vw;
         }
         i{
             color: #707070;
@@ -133,7 +136,7 @@
             margin-right: 3vw;
             background-color: white;
             padding: 0.6vw 1.4vw;
-            color: #ff0000;
+            color: #A6332E;
             font-size: 1.5em;
             font-weight: bold;
             box-shadow: 2px 2px 5px 1px #ccc;

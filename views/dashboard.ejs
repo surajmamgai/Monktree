@@ -29,12 +29,14 @@
 			var y = document.getElementById("icon");
 			var x = document.getElementById("sidebar");
 			if (x.className === "topnav") {
-				y.innerHTML= "<i class='fa fa-times'/>";
-				x.className = " responsive";
+                y.innerHTML= "<i class='fa fa-times'/>";
+                x.className = " responsive";
+                y.style.marginLeft="55vw";
 				w.style.overflowY="hidden";
 			} else {
-				y.innerHTML= "<i class='fa fa-bars'/>";
-				x.className = "topnav";
+                y.innerHTML= "<i class='fa fa-bars'/>";
+                x.className = "topnav";
+                y.style.marginLeft="0vw";
 				w.style.overflowY="scroll";
 			}
              }
